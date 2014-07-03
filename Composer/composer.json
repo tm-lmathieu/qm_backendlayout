@@ -1,0 +1,43 @@
+{
+    "name": "qcmedia/qm_backendlayout",
+    "description": "Extend backend layout and gridelements with fluid",
+    "version": "1.0.0",
+    "type": "typo3-module",
+    "keywords": [
+        "typo3",
+        "gridelements"
+    ],
+    "homepage": "https://github.com/qcmedia/qm_backendlayout",
+    "time": "2014-06-13",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Michael Miousse",
+            "email": "michael.miousse@qcmedia.ca",
+            "role": "Developer"
+        },
+        {
+            "name": "Guy Couronné",
+            "email": "guy.couronne@qcmedia.ca",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/qcmedia/qm_backendlayout/tree/master",
+        "issues": "https://github.com/qcmedia/qm_backendlayout/issues"
+    },
+    "require": {
+        "typo3/cms-core": "*"
+    },
+    "autoload": {
+        "classmap": [
+            "Classes/"
+        ]
+    },
+    "minimum-stability": "RC",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

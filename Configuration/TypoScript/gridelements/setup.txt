@@ -1,0 +1,27 @@
+tt_content.gridelements_pi1.20.10.setup.default.columns.2 >
+tt_content.gridelements_pi1.20.10.setup.default.cObject = FLUIDTEMPLATE
+tt_content.gridelements_pi1.20.10.setup.default.cObject{
+    partialRootPath = {$filepaths.htmlpartials}
+    layoutRootPath = {$filepaths.htmllayouts}
+    template = FILE
+    template {
+        file.stdWrap.cObject = FILES
+        file.stdWrap.cObject {
+            references {
+                table = tx_gridelements_backend_layout
+                uid.field = tx_gridelements_backend_layout
+                fieldName = template
+            }
+
+            maxItems = 1
+
+            renderObj = TEXT
+            renderObj {
+                data = file:current:publicUrl
+            }
+        } 
+    }
+}
+
+tt_content.gridelements_view.20.10.setup.default.columns.2 >
+tt_content.gridelements_view.20.10.setup.default < tt_content.gridelements_pi1.20.10.setup.default

@@ -1,0 +1,8 @@
+filepaths {
+
+    # cat=filepaths; type=string; label=HTML Fluid Layouts: Location of the (X)HTML fluid layouts relative to site
+    htmllayouts = fileadmin/templates/html/layouts/
+
+    # cat=filepaths; type=string; label=HTML Fluid Partials: Location of the (X)HTML fluid partials relative to site
+    htmlpartials = fileadmin/templates/html/partials/
+}

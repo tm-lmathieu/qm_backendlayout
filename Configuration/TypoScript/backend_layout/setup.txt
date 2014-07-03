@@ -1,0 +1,27 @@
+page {
+    # Assign the Template files with the Fluid Backend-Template
+    10 = FLUIDTEMPLATE
+    10 {
+        partialRootPath = {$filepaths.htmlpartials}
+        layoutRootPath = {$filepaths.htmllayouts}
+        template = FILE
+        template {
+            file.stdWrap.cObject = FILES
+            file.stdWrap.cObject {
+                references {
+                    table = backend_layout
+                    uid.data = levelfield:-1, backend_layout_next_level, slide
+                    uid.override.field = backend_layout
+                    fieldName = template
+                }
+                
+                maxItems = 1
+
+                renderObj = TEXT
+                renderObj {
+                    data = file:current:publicUrl
+                }
+            }
+        }
+    }
+}
