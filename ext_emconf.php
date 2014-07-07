@@ -12,10 +12,10 @@
 
 $EM_CONF[$_EXTKEY] = array(
     'title' => 'QmBackendlayout',
-    'description' => 'Extend backend layout and gridelements with fluid',
+    'description' => "This extension adds a new FAL field into backend_layout records and, if installed, gridelements' backend layout records. It allows the BE user to select an HTML template file to render the content of the page using TypoScript's FLUIDTEMPLATE cObject.",
     'category' => 'fe',
     'shy' => 0,
-    'version' => '1.0.0',
+    'version' => '1.0.1',
     'dependencies' => '',
     'conflicts' => '',
     'priority' => '',
